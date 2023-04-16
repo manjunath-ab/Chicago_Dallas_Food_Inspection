@@ -1,0 +1,767 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="0" width="257" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ChicagoFoodInspection_Staging</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="241" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>15000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Food_Inspections (1).tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="DBA Name" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="AKA Name" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="License #" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Facility Type" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Risk" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Address" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="City" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="State" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Zip" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Inspection Date" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Inspection Type" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Results" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Violations" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Latitude" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Longitude" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="Location" size="15000" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_WString" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="222" y="241" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Inspection ID" selected="True" />
+                <Field field="DBA Name" selected="True" />
+                <Field field="AKA Name" selected="True" />
+                <Field field="License #" selected="True" />
+                <Field field="Facility Type" selected="True" />
+                <Field field="Risk" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="State" selected="True" />
+                <Field field="Zip" selected="True" />
+                <Field field="Inspection Date" selected="True" />
+                <Field field="Inspection Type" selected="True" />
+                <Field field="Results" selected="True" />
+                <Field field="Violations" selected="True" />
+                <Field field="Latitude" selected="True" />
+                <Field field="Longitude" selected="True" />
+                <Field field="Location" selected="True" />
+                <Field field="FileName" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="Int32" />
+                <Field name="DBA Name" size="79" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="AKA Name" size="79" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="License #" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="Int32" />
+                <Field name="Facility Type" size="47" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="Risk" size="15" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="Address" size="51" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="City" size="20" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="State" size="2" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="Zip" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="Int32" />
+                <Field name="Inspection Date" size="10" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="Inspection Type" size="41" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="Results" size="20" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="Violations" size="11620" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="V_String" />
+                <Field name="Latitude" size="18" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="Longitude" size="18" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="Location" size="40" source="File: C:\Users\SHREYAS\Downloads\Food_Inspections (1).tsv" type="String" />
+                <Field name="FileName" size="20" source="File: FileName" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="354" y="240" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Inspection ID" selected="True" />
+                <SelectField field="DBA Name" selected="True" />
+                <SelectField field="AKA Name" selected="True" />
+                <SelectField field="License #" selected="True" />
+                <SelectField field="Facility Type" selected="True" />
+                <SelectField field="Risk" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="Inspection Date" selected="True" />
+                <SelectField field="Inspection Type" selected="True" />
+                <SelectField field="Results" selected="True" />
+                <SelectField field="Violations" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Location" selected="True" />
+                <SelectField field="FileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="462" y="241" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>ChicagoFoodInspectionSK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="582" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="FileGetFileName(&quot;DI_ChicagoFoodInspection&quot;)" field="DI_FileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_FileName = FileGetFileName("DI_ChicagoFoodInspe...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="702" y="229" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Violations" selected="True" type="V_WString" size="15000" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="822" y="49" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SHREYAS\AppData\Local\Temp\Engine_12284_2b973421952ebc4abb5e9918e2cd78b0_\Engine_12284_54be690af3e72d47b508cdfe13a65b17~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="846" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:Chicago_Staging|||stg_ChicagoFoodInspection</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Chicago_Staging
+Query=stg_ChicagoFoodInspection</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="66" y="42" width="217" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>ChicagoBusinessLicenses</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="FileName">C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>5000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Business_Licenses (1).tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE ID" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="ACCOUNT NUMBER" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="SITE NUMBER" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LEGAL NAME" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="DOING BUSINESS AS NAME" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="ADDRESS" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="CITY" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="STATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="ZIP CODE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="WARD" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="PRECINCT" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="WARD PRECINCT" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="POLICE DISTRICT" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE CODE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE DESCRIPTION" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY ID" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE NUMBER" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="APPLICATION TYPE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="APPLICATION CREATED DATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="APPLICATION REQUIREMENTS COMPLETE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="PAYMENT DATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="CONDITIONAL APPROVAL" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE TERM START DATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE TERM EXPIRATION DATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE APPROVED FOR ISSUANCE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="DATE ISSUED" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE STATUS" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LICENSE STATUS CHANGE DATE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="SSA" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LATITUDE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LONGITUDE" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="LOCATION" size="5000" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_WString" />
+                <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="234" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="ID" selected="True" />
+                <Field field="LICENSE ID" selected="True" />
+                <Field field="ACCOUNT NUMBER" selected="True" />
+                <Field field="SITE NUMBER" selected="True" />
+                <Field field="LEGAL NAME" selected="True" />
+                <Field field="DOING BUSINESS AS NAME" selected="True" />
+                <Field field="ADDRESS" selected="True" />
+                <Field field="CITY" selected="True" />
+                <Field field="STATE" selected="True" />
+                <Field field="ZIP CODE" selected="True" />
+                <Field field="WARD" selected="True" />
+                <Field field="PRECINCT" selected="True" />
+                <Field field="WARD PRECINCT" selected="True" />
+                <Field field="POLICE DISTRICT" selected="True" />
+                <Field field="LICENSE CODE" selected="True" />
+                <Field field="LICENSE DESCRIPTION" selected="True" />
+                <Field field="BUSINESS ACTIVITY ID" selected="True" />
+                <Field field="BUSINESS ACTIVITY" selected="True" />
+                <Field field="LICENSE NUMBER" selected="True" />
+                <Field field="APPLICATION TYPE" selected="True" />
+                <Field field="APPLICATION CREATED DATE" selected="True" />
+                <Field field="APPLICATION REQUIREMENTS COMPLETE" selected="True" />
+                <Field field="PAYMENT DATE" selected="True" />
+                <Field field="CONDITIONAL APPROVAL" selected="True" />
+                <Field field="LICENSE TERM START DATE" selected="True" />
+                <Field field="LICENSE TERM EXPIRATION DATE" selected="True" />
+                <Field field="LICENSE APPROVED FOR ISSUANCE" selected="True" />
+                <Field field="DATE ISSUED" selected="True" />
+                <Field field="LICENSE STATUS" selected="True" />
+                <Field field="LICENSE STATUS CHANGE DATE" selected="True" />
+                <Field field="SSA" selected="True" />
+                <Field field="LATITUDE" selected="True" />
+                <Field field="LONGITUDE" selected="True" />
+                <Field field="LOCATION" selected="True" />
+                <Field field="FileName" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" size="16" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE ID" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int32" />
+                <Field name="ACCOUNT NUMBER" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int32" />
+                <Field name="SITE NUMBER" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int16" />
+                <Field name="LEGAL NAME" size="117" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="DOING BUSINESS AS NAME" size="128" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="ADDRESS" size="80" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="CITY" size="30" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="STATE" size="2" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="ZIP CODE" size="5" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="WARD" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Byte" />
+                <Field name="PRECINCT" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int16" />
+                <Field name="WARD PRECINCT" size="6" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="POLICE DISTRICT" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Byte" />
+                <Field name="LICENSE CODE" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int16" />
+                <Field name="LICENSE DESCRIPTION" size="60" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="BUSINESS ACTIVITY ID" size="81" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="BUSINESS ACTIVITY" size="735" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="LICENSE NUMBER" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Int32" />
+                <Field name="APPLICATION TYPE" size="6" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="APPLICATION CREATED DATE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="APPLICATION REQUIREMENTS COMPLETE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="PAYMENT DATE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="CONDITIONAL APPROVAL" size="1" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE TERM START DATE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE TERM EXPIRATION DATE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE APPROVED FOR ISSUANCE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="DATE ISSUED" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE STATUS" size="3" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="LICENSE STATUS CHANGE DATE" size="10" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="V_String" />
+                <Field name="SSA" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Byte" />
+                <Field name="LATITUDE" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Double" />
+                <Field name="LONGITUDE" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="Double" />
+                <Field name="LOCATION" size="40" source="File: C:\Users\SHREYAS\Downloads\Business_Licenses (1).tsv" type="String" />
+                <Field name="FileName" size="21" source="File: FileName" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="342" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="1073741823" type="V_WString" />
+                <FormulaField expression="FileGetFileName(&quot;DI_BusinessLicenses&quot;)" field="DI_FileName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_FileName = FileGetFileName("DI_BusinessLicenses...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="606" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>BusinessLicensesSK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="726" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="BusinessLicensesSK" selected="True" />
+                <SelectField field="ID" selected="True" />
+                <SelectField field="LICENSE ID" selected="True" />
+                <SelectField field="ACCOUNT NUMBER" selected="True" />
+                <SelectField field="SITE NUMBER" selected="True" />
+                <SelectField field="LEGAL NAME" selected="True" />
+                <SelectField field="DOING BUSINESS AS NAME" selected="True" />
+                <SelectField field="ADDRESS" selected="True" />
+                <SelectField field="CITY" selected="True" />
+                <SelectField field="STATE" selected="True" />
+                <SelectField field="ZIP CODE" selected="True" />
+                <SelectField field="WARD" selected="True" />
+                <SelectField field="PRECINCT" selected="True" />
+                <SelectField field="WARD PRECINCT" selected="True" />
+                <SelectField field="POLICE DISTRICT" selected="True" />
+                <SelectField field="LICENSE CODE" selected="True" />
+                <SelectField field="LICENSE DESCRIPTION" selected="True" />
+                <SelectField field="BUSINESS ACTIVITY ID" selected="True" />
+                <SelectField field="BUSINESS ACTIVITY" selected="True" />
+                <SelectField field="LICENSE NUMBER" selected="True" />
+                <SelectField field="APPLICATION TYPE" selected="True" />
+                <SelectField field="APPLICATION CREATED DATE" selected="True" />
+                <SelectField field="APPLICATION REQUIREMENTS COMPLETE" selected="True" />
+                <SelectField field="PAYMENT DATE" selected="True" />
+                <SelectField field="CONDITIONAL APPROVAL" selected="True" />
+                <SelectField field="LICENSE TERM START DATE" selected="True" />
+                <SelectField field="LICENSE TERM EXPIRATION DATE" selected="True" />
+                <SelectField field="LICENSE APPROVED FOR ISSUANCE" selected="True" />
+                <SelectField field="DATE ISSUED" selected="True" />
+                <SelectField field="LICENSE STATUS" selected="True" />
+                <SelectField field="LICENSE STATUS CHANGE DATE" selected="True" />
+                <SelectField field="SSA" selected="True" />
+                <SelectField field="LATITUDE" selected="True" />
+                <SelectField field="LONGITUDE" selected="True" />
+                <SelectField field="LOCATION" selected="True" />
+                <SelectField field="DI_CreateDate" selected="True" />
+                <SelectField field="DI_FileName" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="905" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\SHREYAS\AppData\Local\Temp\Engine_23052_bd214b0dd530854dac299a5135c6ea0b_\Engine_23052_cba96f18f0f8cc45a28980d854518ddf~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="857" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:Chicago_Staging|||stg_ChicagoBusinessLicenses</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Create</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Chicago_Staging
+Query=stg_ChicagoBusinessLicenses</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ChicagoFoodInspection_Staging</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="bb2dfabf-0c2f-442a-8d71-542ae535a5fd" />
+      <Telemetry>
+        <PreviousWorkflowId value="5b8f8e17-3a97-4d10-8974-fa6d3ffe5a6a" />
+        <OriginWorkflowId value="5b8f8e17-3a97-4d10-8974-fa6d3ffe5a6a" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
